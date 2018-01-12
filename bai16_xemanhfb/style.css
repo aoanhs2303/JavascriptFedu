@@ -1,0 +1,188 @@
+*{margin: 0; padding: 0;} 
+html, body {
+	width: 100%;
+	height: 100%;
+}
+.menutren {
+	position: fixed;
+	top: 0px;
+}
+
+.noidungchinh {margin-top: 40px}
+.noidungchinh .trai {
+	float: left;
+	width: 18%;
+}
+
+.noidungchinh .giua {
+	float: left;
+	width: 42%;
+}
+.noidungchinh .phai {
+	float: right;
+	width: 38%;	
+}
+
+.motkhoi {
+	height: 100%;
+	width: 100%;
+	margin: 20px 10px;
+
+	border: 1px solid gray;
+	border-radius: 3px;
+}
+.motkhoi .avatar {}
+.motkhoi .avatar .atrai {
+	height: 40px;
+	width: 40px;
+	float: left;
+	margin-top: 3px;
+	margin-right: 6px;
+}
+.motkhoi .avatar .aphai .ngaythang{
+	color: #90949c;
+	font-size: 13px;
+}
+.motkhoi .avatar .atrai img {
+	height: 100%;
+}
+
+.motkhoi .cacanh {
+	height: 100%;
+	width: 100%;
+	padding: 10px;
+	cursor: pointer;
+}
+
+
+/*.motkhoi .cacanh ._1anhtren img {
+	width: 100%;
+}
+*/
+.motkhoi .cacanh img{
+	width: 32.5%;
+}
+.motkhoi .cacanh img._1anhtren {
+	height: 100%;
+	width: 100%;
+}
+.popup {}
+.popup .nenden {
+	transition: 0.4s;
+	background-color: rgba(0,0,0,0.4);
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+
+	/*Xu ly*/
+	opacity: 0;
+	visibility: hidden;
+}
+.hiennenden {
+	opacity: 1!important;
+	visibility: visible!important;
+}
+.donglai {
+	background-image: url(images/icon.png);
+	width: 16px;
+    height: 16px;
+    background-position: -245px -123px;
+    float: right;
+    margin: 15px 20px 15px 20px;
+    opacity: 0.4;
+    cursor: pointer;
+}
+.donglai:hover {
+	opacity: 1;
+}
+
+.thongtinanh {
+	position: fixed;
+	width: 70%;
+	height: 90%;
+	background: black;
+	z-index: 5;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: 0.3s;
+		/*TAT*/
+	opacity: 0;
+	visibility: hidden;
+}
+
+.thongtinanh .tttrai {
+	width: 65%;
+	height: 100%;
+	float: left;
+	background: black;
+}
+.thongtinanh .ttphai {
+	width: 35%;
+	height: 100%;
+	float: left;
+	background: url(images/cmt.JPG);
+	background-size: cover;
+
+
+}
+.khoicacanh {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.khoicacanh ul {
+	margin: 0px;
+}
+.khoicacanh ul li {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+
+	opacity: 0;
+	visibility: hidden;
+}
+
+.khoicacanh ul li.active {
+	opacity: 1 !important;
+	visibility: visible !important;
+}
+.khoicacanh ul li img {
+	width: 100%;
+	max-height: 100%;
+}
+.khoicacnut {
+	height: 100%;
+	width: 100%;
+}
+
+.khoicacnut .trai i{
+	z-index: 15;
+	font-size: 60px;
+	opacity: 1;
+	visibility: visible;
+	color: #95a5a6;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 1%;
+}
+.khoicacnut .phai i{
+	z-index: 15;
+	font-size: 60px;
+	opacity: 1;
+	visibility: visible;
+	color: #95a5a6;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 36%;
+}
+.khoicacnut .phai i:hover, .khoicacnut .trai i:hover {
+	color: #ecf0f1;
+}

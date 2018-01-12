@@ -1,0 +1,18 @@
+*{margin: 0; padding: 0;} 
+.card {
+	transition: 0.4s;
+}
+.move {
+	/*transform: translateX(200px);*/
+
+	animation: sangphai 2s forwards;
+}
+
+@-webkit-keyframes sangphai {
+/*	form {transform: translateX(0);}
+	to {transform: translateX(200px);}*/
+
+	0% {transform: translateX(0);}
+	80% {transform: translateX(300px);}
+	100% {transform: translateX(400px);}
+}

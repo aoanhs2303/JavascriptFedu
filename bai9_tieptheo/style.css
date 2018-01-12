@@ -1,0 +1,46 @@
+*{margin: 0; padding: 0;} 
+nav.navbar {
+	background-color: #4267B2;
+}
+.motkhoi {
+	float: right;
+	position: relative;
+}
+.motkhoi i {
+	padding-right: 40px;
+	font-size: 20px;
+	margin-top: 10px;
+}
+.danhsach {
+	margin-top: 15px;
+	position: absolute;
+	width: 200px;
+	opacity: 0;
+	visibility: hidden;
+	right: 0px;
+}
+.danhsach:after {
+	content: "";
+	height: 0px;
+	width: 0px;
+    border: 10px solid #ff000000;
+    position: absolute;
+    right: 40px;
+    border-bottom: 10px solid white;
+    top: -19px;
+}
+
+
+.mautrang {
+	color: white;
+}
+.show {
+	opacity: 1;
+	visibility: visible;
+	animation: hienlen 0.3s forwards;
+}
+
+@-webkit-keyframes hienlen {
+	from {transform: translateY(200px); opacity: 0}
+	to {transform: translateY(0px); opacity: 1}
+}

@@ -1,0 +1,44 @@
+*{margin: 0; padding: 0;} 
+nav {
+	background-color: #4267B2;
+	height: 40px;
+	position: relative;
+}
+.motphantu {
+	position: absolute;
+	right: 0px;
+}
+.tamgiac i {
+	font-size: 20px;
+	margin-top: 10px;
+	margin-right: 50px;
+}
+.tamgiactrang i {
+	color: white;
+}
+
+.danhsach {
+	margin-top: 7px;
+	width: 150px;
+	position: absolute;
+	right: 10px;
+	transition: 0.2s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+.danhsach:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border: 8px solid #ffffff00;
+    border-bottom: 8px solid white;
+    top: -15px;
+    right: 38px;
+}

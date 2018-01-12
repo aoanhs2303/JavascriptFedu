@@ -1,0 +1,107 @@
+*{margin: 0; padding: 0; width: 100%; height: 100%} 
+.chuyenslide {
+	text-align: center;
+	overflow: hidden;
+	height: auto;
+	position: absolute;
+	bottom: 0px;
+
+	z-index: 20;
+}
+
+.chuyenslide ul {
+	display: inline;
+
+}
+
+.chuyenslide ul li {
+	display: inline-block;
+	border: 2px solid red;
+	text-indent: 999px;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	margin: 20px 12px;
+	transition: 0.4s;
+	cursor: pointer;
+}
+.chuyenslide ul li:hover {
+	background: orangered;
+}
+
+.chuyenslide ul li.active {
+	background: orangered;
+}
+
+/*CSS CHO NOI DUNG SLIDE*/
+.cacslide {
+	position: relative;
+}
+
+.cacslide ul li {
+	list-style: none;
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+}
+.cacslide ul li.kichhoat {
+	opacity: 1 !important;
+	visibility: visible!important;
+}
+.cacslide ul li .motslide {
+	position: relative;
+}
+/*.cacslide ul li .motslide * {
+	position: absolute;
+}*/
+.motslide .anh {
+	width: 100%;
+	height: 100%;
+	background-size: cover;	
+	overflow: hidden;
+}
+
+.motslide .nauduoi1, .motslide .nauduoi2, .motslide .nautren, .motslide .textnoidung {
+	position: absolute;
+	top: 0px;
+	z-index: 1;
+	opacity: 0;
+	overflow: hidden;
+}
+
+
+.motslide .nauduoi1 {
+	opacity: 0;
+	transition: 0.4s;
+}
+.cacslide ul li.kichhoat .motslide .nauduoi1 {
+	animation: nauvao 1s forwards;
+}
+
+@-webkit-keyframes nauvao {
+	from {transform: translateX(-100%); opacity: 0}
+	to {transform: translateX(0%); opacity: 0.4}
+
+}
+.motslide .nauduoi2 {
+	opacity: 0.8;
+	left: -20%;
+}
+.motslide .nautren {
+	opacity: 0.5;
+	top: -200px;
+}
+.motslide .textnoidung {
+	opacity: 1;
+	padding-top: 17%;
+	padding-left: 5%;
+	box-sizing: border-box;
+}
+
+
+.textnoidung h2,p,small,a {
+	height: auto;
+	color: white;
+	width: 300px;
+	overflow: hidden;
+}

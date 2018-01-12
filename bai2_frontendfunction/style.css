@@ -1,0 +1,9 @@
+*{margin: 0; padding: 0;} 
+.kcm img {
+	width: 60px;
+	padding: 2px;
+}
+
+.kcm {
+	display: block;
+}

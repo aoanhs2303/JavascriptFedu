@@ -1,0 +1,31 @@
+*{margin: 0; padding: 0;} 
+.menutren {
+	background: url(images/menu14.PNG) no-repeat;
+	height: 100px;
+}
+.menu {
+	background: orangered;
+}
+.menu ul li{
+	display: inline-block;
+	font-size: 20px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 30px 0 30px;
+}
+
+.doimau {
+	background: #2c3e50;
+	color: #c0392b;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	top: 0px;
+	line-height: 40px;
+	height: 40px;
+}
+
+.stick {
+	position: fixed;
+	top: 50px;
+}
